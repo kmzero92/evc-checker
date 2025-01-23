@@ -1,0 +1,16 @@
+name: Vérification EVC
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Vérifie toutes les 5 minutes
+
+jobs:
+  check_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+      - name: Exécuter le script
+        run: python script.py
