@@ -2,7 +2,7 @@ name: Vérification EVC
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Vérifie toutes les 5 minutes
+    - cron: '*/1 * * * *'  # Vérifie toutes les 5 minutes
 
 jobs:
   check_update:
