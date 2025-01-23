@@ -2,8 +2,8 @@ name: Vérification EVC
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Vérifie toutes les 5 minutes
-  workflow_dispatch:  # Permet de lancer manuellement depuis GitHub
+    - cron: '*/1 * * * *'  # Exécuter chaque minute
+  workflow_dispatch:  # Permet de lancer manuellement
 
 jobs:
   check_update:
