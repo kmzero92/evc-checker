@@ -2,7 +2,7 @@ name: Vérification EVC
 
 on:
   schedule:
-    - cron: '*/1 * * * *'  # Exécuter chaque minute
+    - cron: '*/5 * * * *'  # Exécuter chaque minute
   workflow_dispatch:  # Permet de lancer manuellement
 
 jobs:
